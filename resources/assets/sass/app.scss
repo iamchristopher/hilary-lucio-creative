@@ -10,5 +10,7 @@ body {
     max-width: 920px;
 }
 
+@import './components/typography';
 @import './components/mainHeader';
 @import './components/mainNavigation';
+@import './components/mainFooter';

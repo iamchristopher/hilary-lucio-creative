@@ -1,0 +1,28 @@
+.mainFooter {
+    background: $tertiaryColour;
+    color: $mainBackground;
+
+    a {
+        color: $mainBackground;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .container {
+        box-sizing: border-box;
+        display: flex;
+        padding: $mainGutter / 2;
+
+        > div {
+            flex: 1 0 auto;
+            margin: $mainGutter / 2;
+
+            &:nth-of-type(2) {
+                flex-shrink: 1;
+            }
+        }
+    }
+}
