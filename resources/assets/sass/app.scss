@@ -1,9 +1,14 @@
+@import 'variables';
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+body {
+    background: $mainBackground;
+    font: normal 1rem/1.0 Arial;
+}
 
-// Variables
-@import "variables";
+.container {
+    margin: 0 auto;
+    max-width: 920px;
+}
 
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import './components/mainHeader';
+@import './components/mainNavigation';
