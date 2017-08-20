@@ -44,7 +44,7 @@
                 </div>
                 <div>
                     <h6>Availability</h6>
-                    <p>H. Lucio Creative is currently accepting new freelance projects. Availability may vary on a monthly basis depending on capacity. To request a quote or general questions regarding any design needs you require (including, but not limited to the services outlined on this website), please submit a request in the form above.</p>
+                    <p>H. Lucio Creative is currently accepting new freelance projects. Availability may vary on a monthly basis depending on capacity. To request a quote or general questions regarding any design needs you require (including, but not limited to the services outlined on this website), please submit a request in the form&nbsp;above.</p>
                 </div>
                 <div>
                     <img alt="/images/logo_footer.png" src="#" />
