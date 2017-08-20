@@ -1,42 +1,25 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
+        <title>Hilary Lucio Creative</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-
-        <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link href="{{ mix('/css/app.css') }}" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
+            <header class="mainHeader container">
+                <img alt="Hilary Lucio Creative logo" src="/images/logo_main.png" />
+                <nav class="mainNavigation">
+                    <ul>
+                        <li><a href="#" title="See my work">Portfolio</a></li>
+                        <li><a href="#" title="View my resume">CV</a></li>
+                        <li><a href="#" title="Behold my wares">Services</a></li>
+                        <li><a href="#" title="Read aricles">Articles</a></li>
+                        <li><a href="#" title="Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
     </body>
 </html>
