@@ -43,8 +43,9 @@ a {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 0 auto $mainGutter;
     max-width: 1280px;
+    padding: 0 $mainGutter;
 }
 
 @import './components/typography';
