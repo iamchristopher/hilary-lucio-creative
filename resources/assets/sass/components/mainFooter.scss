@@ -1,0 +1,53 @@
+.mainFooter {
+    background: $tertiaryColour;
+    color: $mainBackground;
+
+    a {
+        color: $mainBackground;
+        font-weight: 100;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .container {
+        box-sizing: border-box;
+        padding: $mainGutter / 2;
+
+        > div {
+            flex: 1 0 auto;
+            margin: $mainGutter / 2;
+            order: 0;
+
+            &:nth-of-type(3) {
+                flex-shrink: 1;
+            }
+        }
+
+        @media all and (min-width: 715px) {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+
+            > div {
+                &:last-child {
+                    order: -1;
+                }
+            }
+        }
+
+        @media all and (min-width: 1024px) {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: nowrap;
+
+            > div {
+                &:last-child {
+                    order: 0;
+                }
+            }
+        }
+    }
+}
