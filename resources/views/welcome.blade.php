@@ -7,10 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link href="{{ mix('/css/app.css') }}" rel="stylesheet" type="text/css" />
+        <!--
+        TODO: Add schema definitions
+        http://schema.org/location
+        https://support.google.com/webmasters/answer/99170?hl=en
+        -->
     </head>
     <body>
         <header class="mainHeader container">
-            <a href="/" title="Hilary Lucio Creative">
+            <a class="mainLogo" href="/" title="Hilary Lucio Creative">
                 <img alt="Hilary Lucio Creative logo" src="/images/logo_main.png" />
             </a>
             <nav class="mainNavigation">
