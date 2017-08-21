@@ -2,13 +2,53 @@
 
 body {
     background: $mainBackground;
-    font: normal 1rem/1.0 Arial;
+    margin: $mainGutter 0;
+    padding: 0;
+}
+
+a {
+    color: $primaryColour;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &[href^="mailto:"],
+    &[href^="tel:"] {
+        padding-left: 20px;
+        position: relative;
+
+        &:before {
+            background: url("/images/icons.png") -15px 0;
+            bottom: 0;
+            content: '\00a0';
+            display: inline-block;
+            height: 18px;
+            left: 0;
+            margin: 0 .25rem 0 0;
+            position: absolute;
+            width: 15px;
+        }
+    }
+
+    &[href^="mailto:"] {
+        &:before {
+            background-position: -30px 0;
+        }
+    }
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 920px;
+    margin: 0 auto $mainGutter;
+    max-width: 1280px;
+    padding: 0 $mainGutter;
 }
 
+@import './components/typography';
 @import './components/mainHeader';
 @import './components/mainNavigation';
+@import './components/mainFooter';
