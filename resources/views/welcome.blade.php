@@ -28,6 +28,15 @@
                 </ul>
             </nav>
         </header>
+        <div class="masthead">
+            <div class="container">
+                <h1>
+                    <span>Holistic creative solutions</span>
+                    <br />
+                    <span>for your business</span>
+                </h1>
+            </div>
+        </div>
         <footer class="mainFooter">
             <div class="container">
                 <div>

@@ -1,0 +1,18 @@
+.masthead {
+    background: $primaryColour;
+    color: $mainBackground;
+    padding: $mainGutter;
+
+    h1 {
+        line-height: 2.75rem;
+        text-align: center;
+        text-transform: uppercase;
+
+        span {
+            box-shadow: 1.25rem 0 0 $secondaryColour,
+                -1.25rem 0 0 $secondaryColour;
+            background-color: $secondaryColour;
+            padding: .6rem 0 .5rem;
+        }
+    }
+}
