@@ -45,6 +45,17 @@
                     <br />
                     <span>for your business</span>
                 </h1>
+                <div class="services">
+                    <ul>
+                        <li>Branding</li>
+                        <li>Print</li>
+                        <li>Social</li>
+                        <li>Web &amp; Digital</li>
+                        <li>Illustration</li>
+                        <li>Photography</li>
+                        <li>Copywriting</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <footer class="mainFooter">
