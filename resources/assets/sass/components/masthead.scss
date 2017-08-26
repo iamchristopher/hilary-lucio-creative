@@ -1,6 +1,7 @@
 .masthead {
     background: url('/images/bg_tex_cubes.png') $primaryColour bottom center;
     background-blend-mode: multiply;
+    background-attachment: fixed;
     color: $mainBackground;
     margin-bottom: $mainGutter;
     padding: $mainGutter;
