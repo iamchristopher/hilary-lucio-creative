@@ -24,6 +24,10 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
         z-index: -1;
     }
+
+    &[data-subtitle] {
+        margin: 3.1rem 0;
+    }
 }
 
 h1 {
