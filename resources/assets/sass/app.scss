@@ -49,6 +49,34 @@ hr {
     margin: 0 0 1.6rem 0;
 }
 
+.btn {
+    display: inline-block;
+    font-size: .75rem;
+    text-transform: uppercase;
+    transition: all $mainTransitionDuration;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &.primary {
+        background: $primaryColour;
+        border-radius: 1rem;
+        border: .15rem solid $mainBackground;
+        box-shadow: 0 0 0 .2rem $primaryColour;
+        color: $mainBackground;
+        margin: .25rem 0 1rem 0;
+        padding: .5rem 1rem;
+
+        &:hover {
+            background-color: $mainBackground;
+            border-color: $primaryColour;
+            box-shadow: 0 0 0 0 $mainBackground;
+            color: $primaryColour;
+        }
+    }
+}
+
 .container {
     margin: 0 auto $mainGutter;
     max-width: 1280px;
