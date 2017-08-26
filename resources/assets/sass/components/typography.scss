@@ -2,10 +2,13 @@ body {
     font: normal 1rem/1.6rem Arial;
 }
 
-h6 {
-    font-size: 1.0rem;
+h1, h2, h3, h4, h5, h6 {
     margin: 0 0 1.6rem;
     text-transform: uppercase;
+}
+
+h6 {
+    font-size: 1.0rem;
 }
 
 p {
