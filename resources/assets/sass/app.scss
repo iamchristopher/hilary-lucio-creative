@@ -46,6 +46,12 @@ a {
     margin: 0 auto $mainGutter;
     max-width: 1280px;
     padding: 0 $mainGutter;
+
+    section {
+        margin: 0 auto $mainGutter auto;
+        text-align: center;
+        width: 50%;
+    }
 }
 
 @import './components/typography';
