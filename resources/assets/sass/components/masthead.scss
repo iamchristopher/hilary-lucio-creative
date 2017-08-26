@@ -15,4 +15,10 @@
             padding: .6rem 0 .5rem;
         }
     }
+
+    .container {
+        border: 3px solid $mainBackground;
+        margin-bottom: 0;
+        padding: $mainGutter * 2;
+    }
 }
