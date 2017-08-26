@@ -85,7 +85,7 @@ hr {
     section {
         margin: 0 auto $mainGutter auto;
         text-align: center;
-        width: 50%;
+        //width: 50%;
     }
 }
 
@@ -94,3 +94,4 @@ hr {
 @import './components/mainNavigation';
 @import './components/mainFooter';
 @import './components/masthead';
+@import './components/buckets';

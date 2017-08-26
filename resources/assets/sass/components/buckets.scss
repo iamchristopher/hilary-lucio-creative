@@ -1,0 +1,65 @@
+.buckets {
+    align-content: flex-start;
+    counter-reset: test;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 1.6rem 0;
+    padding: 0;
+
+    li {
+        box-sizing: border-box;
+        counter-increment: test;
+        flex: 0 1 auto;
+        display: inline-block;
+        margin: 0 0 1.6rem 0;
+        padding: 0 $mainGutter;
+        width: 33%;
+
+        h3 {
+            &:before {
+                background: url('/images/sprite_services.png') 0 0 no-repeat;
+                content: "";
+                display: block;
+                height: 80px;
+                margin: $mainGutter / 2 auto;
+                width: 80px;
+            }
+
+            &.publication {
+                &:before {
+                    background-position: -240px 0;
+                }
+            }
+
+            &.digital {
+                &:before {
+                    background-position: -400px 0;
+                }
+            }
+
+            &.social {
+                &:before {
+                    background-position: -80px 0;
+                }
+            }
+
+            &.illustration {
+                &:before {
+                    background-position: -320px 0;
+                }
+            }
+
+            &.copywriting {
+                &:before {
+                    background-position: -160px 0;
+                }
+            }
+        }
+
+        small {
+            color: $secondaryColour;
+        }
+    }
+}

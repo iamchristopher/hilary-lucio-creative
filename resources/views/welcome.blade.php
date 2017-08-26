@@ -65,6 +65,41 @@
                 <a class="btn primary" href="#">Wanna see my CV?</a>
                 <hr />
             </section>
+            <section>
+                <h2 data-subtitle="From eh to zed">Services</h2>
+                <ul class="buckets">
+                    <li>
+                        <h3 class="brand">Brand &amp; Identity Development</h3>
+                        <p>Find your voice and expand your story into a logo and brand that makes a lasting impression.</p>
+                        <small>Includes: Brand Stories and Strategy, Logos, Brand Guidelines, Marketing Tools</small>
+                    </li>
+                    <li>
+                        <h3 class="publication">Print Publications &amp; Collateral</h3>
+                        <p>Amplify your brand presence with high quality print pieces that connect with your audience.</p>
+                        <small>Includes: Catalogues, Brochures, Brand Stationery, Annual Reports, Invitations</small>
+                    </li>
+                    <li>
+                        <h3 class="digital">Digital Advertising &amp; Website Design</h3>
+                        <p>Reach out to potential customers and users with captivating digital advertising and an informative web presence.</p>
+                        <small>Includes: Display Advertisements, Website Design, E-Blasts & Newsletters, Presentations</small>
+                    </li>
+                    <li>
+                        <h3 class="social">Social Media Support</h3>
+                        <p>Stay connected through social media strategies, supported by eye-catching imagery and strategic content planning.</p>
+                        <small>Includes: Account Setup, Brand & Content Support, Content Planning & Scheduling</small>
+                    </li>
+                    <li>
+                        <h3 class="illustration">Illustration &amp; Photography</h3>
+                        <p>Elevate your brand with captivating and unique imagery that can be used across various platforms.</p>
+                        <small>Includes: Digital Illustration, Infographics, Headshots, Lifestyle & Product Photography</small>
+                    </li>
+                    <li>
+                        <h3 class="copywriting">Copywriting for Print, Web &amp; Social</h3>
+                        <p>Create a strong, consistent brand voice across all communication channels through impactful copywriting.</p>
+                        <small>Includes: Publication & Website Content, Brand Stories, Social Media Content Calendars</small>
+                    </li>
+                </ul>
+            </section>
         </div>
         <footer class="mainFooter">
             <div class="container">
