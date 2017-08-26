@@ -58,6 +58,14 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <section>
+                <h2 data-subtitle="Who are you?">About me</h2>
+                <p>four loko pop-up farm-to-table Cosby sweater lomo squid quinoa deep v beard pour-over cray mixtape dreamcatcher Helvetica art party craft beer bespoke street art umami +1 skateboard typewriter asymmetrical cardigan Carles next level Truffaut try-hard ethical PBR flexitarian cliche Pinterest locavore meh scenester heirloom crucifix fanny pack you probably haven't heard of them</p>
+                <a class="btn primary" href="#">Wanna see my CV?</a>
+                <hr />
+            </section>
+        </div>
         <footer class="mainFooter">
             <div class="container">
                 <div>
