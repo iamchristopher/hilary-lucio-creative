@@ -8,25 +8,26 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     text-transform: uppercase;
 
-    &:after {
-        color: #ebebeb;
-        content: attr(data-subtitle);
-        font-family: bebas-neue;
-        font-size: 3rem;
-        font-weight: 100;
-        left: 0;
-        line-height: 2.8rem;
-        position: absolute;
-        text-align: center;
-        text-transform: uppercase;
-        top: 50%;
-        transform: translateY(-55%);
-        width: 100%;
-        z-index: -1;
-    }
 
     &[data-subtitle] {
         margin: 3.1rem 0;
+
+        &:after {
+            color: #ebebeb;
+            content: attr(data-subtitle);
+            font-family: bebas-neue;
+            font-size: 3rem;
+            font-weight: 100;
+            left: 0;
+            line-height: 2.8rem;
+            position: absolute;
+            text-align: center;
+            text-transform: uppercase;
+            top: 50%;
+            transform: translateY(-55%);
+            width: 100%;
+            z-index: -1;
+        }
     }
 }
 
