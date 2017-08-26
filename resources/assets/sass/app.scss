@@ -42,6 +42,13 @@ a {
     }
 }
 
+hr {
+    background: url('/images/bg_divider.png') center center no-repeat;
+    border: none;
+    height: 6.2rem;
+    margin: 0 0 1.6rem 0;
+}
+
 .container {
     margin: 0 auto $mainGutter;
     max-width: 1280px;
