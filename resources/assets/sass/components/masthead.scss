@@ -1,6 +1,7 @@
 .masthead {
     background: $primaryColour;
     color: $mainBackground;
+    margin-bottom: $mainGutter;
     padding: $mainGutter;
 
     h1 {
@@ -18,6 +19,7 @@
 
     .container {
         border: 3px solid $mainBackground;
+        box-sizing: border-box;
         margin-bottom: 0;
         padding: $mainGutter * 2;
     }
