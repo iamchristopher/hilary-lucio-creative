@@ -1,0 +1,52 @@
+.masthead {
+    background: url('/images/bg_tex_cubes.png') $primaryColour bottom center;
+    background-blend-mode: multiply;
+    color: $mainBackground;
+    margin-bottom: $mainGutter;
+    padding: $mainGutter;
+
+    h1 {
+        letter-spacing: 0.25rem;
+        line-height: 2.75rem;
+        margin-top: 7px;
+        text-align: center;
+        text-transform: uppercase;
+
+        span {
+            box-shadow: 1.25rem 0 0 $secondaryColour,
+                -1.25rem 0 0 $secondaryColour;
+            background-color: $secondaryColour;
+            padding: .6rem 0 .5rem;
+        }
+    }
+
+    .container {
+        border: 3px solid $mainBackground;
+        box-sizing: border-box;
+        margin-bottom: 0;
+        padding: $mainGutter * 2;
+    }
+
+    .services {
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        text-transform: uppercase;
+        width: 50%;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                font-weight:700;
+                padding: 0 1rem;
+                text-align: center;
+            }
+        }
+    }
+}

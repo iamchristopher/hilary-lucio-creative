@@ -12,6 +12,16 @@
         http://schema.org/location
         https://support.google.com/webmasters/answer/99170?hl=en
         -->
+        <script>
+            (function(d) {
+                var config = {
+                        kitId: 'awk4lns',
+                        scriptTimeout: 3000,
+                        async: true
+                    },
+                    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+        </script>
     </head>
     <body>
         <header class="mainHeader container">
@@ -28,6 +38,26 @@
                 </ul>
             </nav>
         </header>
+        <div class="masthead">
+            <div class="container">
+                <h1>
+                    <span>Holistic creative solutions</span>
+                    <br />
+                    <span>for your business</span>
+                </h1>
+                <div class="services">
+                    <ul>
+                        <li>Branding</li>
+                        <li>Print</li>
+                        <li>Social</li>
+                        <li>Web &amp; Digital</li>
+                        <li>Illustration</li>
+                        <li>Photography</li>
+                        <li>Copywriting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <footer class="mainFooter">
             <div class="container">
                 <div>
