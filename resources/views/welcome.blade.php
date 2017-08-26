@@ -58,6 +58,9 @@
                 </div>
             </div>
         </div>
+        <section class="container">
+            <h2 data-subtitle="Who are you?">About me</h2>
+        </section>
         <footer class="mainFooter">
             <div class="container">
                 <div>
