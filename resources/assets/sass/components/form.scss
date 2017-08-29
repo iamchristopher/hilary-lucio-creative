@@ -1,0 +1,86 @@
+form {
+    margin: 0 auto 1.6rem;
+    max-width: 50%;
+
+    fieldset {
+        border: none;
+
+        label {
+            box-sizing: border-box;
+            color: $primaryColour;
+            display: inline-block;
+            float: left;
+            font-size: .85rem;
+            font-weight: 700;
+            letter-spacing: .05rem;
+            margin: 0 0 1.6rem;
+            padding: 0 $mainGutter / 4;
+            text-transform: uppercase;
+            width: 100%;
+        }
+
+        legend {
+            display: none;
+        }
+
+        input,
+        select,
+        textarea {
+            appearance: none;
+            background-color: $mainBackground;
+            border: .2rem solid #ebebeb;
+            border-radius: .5rem;
+            box-sizing: border-box;
+            color: $tertiaryColour;
+            display: block;
+            font-family: "Proxima Nova";
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.6rem;
+            //height: 1.6rem;
+            padding: .7rem 1.25rem .55rem;
+            width: 100%;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: #c9c9c9;
+            }
+        }
+
+        input {
+            &[type='date'] {
+                padding-top: .6rem;
+                position: relative;
+
+                &::-webkit-inner-spin-button {
+                    appearance: none;
+                    display: none;
+                }
+
+                &::-webkit-calendar-picker-indicator {
+                    color: transparent;
+                    background: url('/images/icon_arrow.png') 0 0 no-repeat;
+                    display: block;
+                    height: 16px;
+                    position: absolute;
+                    right: 2px;
+                    width: 16px;
+                }
+            }
+        }
+
+        select {
+            background-image: url('/images/icon_arrow.png');
+            background-position: right 10px center;
+            background-repeat: no-repeat;
+        }
+
+        textarea {
+            min-height: 7.3rem;
+            resize: vertical;
+        }
+    }
+}
