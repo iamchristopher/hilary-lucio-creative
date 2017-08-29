@@ -50,8 +50,12 @@ hr {
 }
 
 .btn {
+    cursor: pointer;
     display: inline-block;
+    font-family: "Proxima Nova";
     font-size: .75rem;
+    font-weight: 700;
+    line-height: 1.6rem;
     text-transform: uppercase;
     transition: all $mainTransitionDuration;
 
@@ -61,11 +65,11 @@ hr {
 
     &.primary {
         background: $primaryColour;
-        border-radius: 1rem;
+        border-radius: .5rem;
         border: .15rem solid $mainBackground;
         box-shadow: 0 0 0 .2rem $primaryColour;
         color: $mainBackground;
-        margin: .25rem 0 1rem 0;
+        margin: .25rem 0 1.575rem 0;
         padding: .5rem 1.25rem .35rem;
 
         &:hover {
