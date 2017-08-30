@@ -117,10 +117,13 @@ hr {
     padding: 0 $mainGutter;
 
     section {
-        margin: 0 auto $mainGutter auto;
+        margin: 0 auto $mainGutter * 2 auto;
         text-align: center;
-        //width: 50%;
     }
+}
+
+.aboutSection {
+    width: 60%;
 }
 
 @import './components/typography';
