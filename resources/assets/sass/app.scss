@@ -79,6 +79,36 @@ hr {
             color: $primaryColour;
         }
     }
+
+    &.secondary {
+        background: $mainBackground;
+        border-radius: .5rem;
+        border: .15rem solid $secondaryColour;
+        box-shadow: 0 0 0 .2rem $mainBackground;
+        color: $secondaryColour;
+        margin: .25rem 0 1.575rem 0;
+        padding: .5rem 1.25rem .35rem;
+
+        &:hover {
+            border-color: $secondaryColour;
+            box-shadow: 0 0 0 0 $mainBackground;
+        }
+    }
+
+    &.tertiary {
+        background: $tertiaryColour;
+        border-radius: .5rem;
+        border: .15rem solid $mainBackground;
+        box-shadow: 0 0 0 .2rem $tertiaryColour;
+        color: $mainBackground;
+        margin: .25rem 0 1.575rem 0;
+        padding: .5rem 1.25rem .35rem;
+
+        &:hover {
+            border-color: $mainBackground;
+            box-shadow: 0 0 0 0 $tertiaryColour;
+        }
+    }
 }
 
 .container {
