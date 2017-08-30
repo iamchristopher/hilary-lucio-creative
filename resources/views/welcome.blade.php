@@ -100,6 +100,19 @@
                     </li>
                 </ul>
             </section>
+            <section class="featuredSection">
+                <div class="primary">
+                    <div>
+                        <h2 class="secondary" data-subtitle="Selected projects">Portfolio</h2><br>
+                        <a class="btn secondary" href="#">See all projects</a>
+                    </div>
+                    <img src="/images/sketchbook.png" />
+                </div>
+                <div>
+                    <h2 class="tertiary" data-subtitle="Thoughts &amp; musings">Articles</h2><br>
+                    <a class="btn tertiary" href="#">See all posts</a>
+                </div>
+            </section>
             <section>
                 <h2 data-subtitle="Witty subtitle">Contact me</h2>
                 <form>

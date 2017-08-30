@@ -1,0 +1,26 @@
+.featuredSection {
+    display: flex;
+
+    > div {
+        background: url('/images/bg_tex_arrows.png') center center #e8e8e8;
+        flex: 1 0 auto;
+        margin: 0 $mainGutter / 4 $mainGutter;
+        padding: $mainGutter;
+
+        &.primary {
+            background: url('/images/bg_tex_stripes.png') center center $secondaryColour;
+            flex: 3 0 auto;
+            position: relative;
+
+            img {
+                bottom: 0;
+                position: absolute;
+                right: 0;
+            }
+        }
+
+        .btn {
+            margin: 0;
+        }
+    }
+}
