@@ -128,7 +128,7 @@
                             <textarea name="notes" placeholder="Leave me some details"></textarea>
                         </label>
                     </fieldset>
-                    <button class="btn primary" type="submit">Submit request</button>
+                    <button class="btn primary" type="submit">Get started</button>
                 </form>
             </section>
         </div>
