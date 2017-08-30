@@ -8,9 +8,9 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     text-transform: uppercase;
 
-
     &[data-subtitle] {
         margin: 3.1rem 0;
+        z-index: 2;
 
         &:after {
             color: #ebebeb;
@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6 {
             font-weight: 100;
             left: 0;
             line-height: 2.8rem;
+            opacity: .5;
             position: absolute;
             text-align: center;
             text-transform: uppercase;
@@ -27,6 +28,20 @@ h1, h2, h3, h4, h5, h6 {
             transform: translateY(-55%);
             width: 100%;
             z-index: -1;
+        }
+
+        &.secondary {
+            color: $mainBackground;
+
+            &:after {
+                color: #2a498d;
+            }
+        }
+
+        &.tertiary {
+            &:after {
+                color: $mainBackground;
+            }
         }
     }
 }
