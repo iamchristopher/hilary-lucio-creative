@@ -5,21 +5,7 @@
     color: $mainBackground;
     margin-bottom: $mainGutter;
     padding: $mainGutter;
-
-    h1 {
-        letter-spacing: 0.25rem;
-        line-height: 2.75rem;
-        margin-top: 7px;
-        text-align: center;
-        text-transform: uppercase;
-
-        span {
-            box-shadow: 1.25rem 0 0 $secondaryColour,
-                -1.25rem 0 0 $secondaryColour;
-            background-color: $secondaryColour;
-            padding: .6rem 0 .5rem;
-        }
-    }
+    text-align: center;
 
     .container {
         border: 3px solid $mainBackground;
@@ -48,6 +34,36 @@
                 padding: 0 1rem;
                 text-align: center;
             }
+        }
+    }
+
+    &.primary {
+        h1 {
+            letter-spacing: 0.25rem;
+            line-height: 2.75rem;
+            margin-top: 7px;
+            text-transform: uppercase;
+
+            span {
+                box-shadow: 1.25rem 0 0 $secondaryColour,
+                -1.25rem 0 0 $secondaryColour;
+                background-color: $secondaryColour;
+                padding: .6rem 0 .5rem;
+            }
+        }
+    }
+
+    &.tertiary {
+        background-color: #ebebeb;
+        background-image: url("/images/bg_tex_arrows.png");
+
+        h1 {
+            @extend h2;
+        }
+
+        .container {
+            border: 0;
+            padding: 0;
         }
     }
 }
