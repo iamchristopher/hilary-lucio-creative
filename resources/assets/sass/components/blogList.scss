@@ -46,6 +46,7 @@
         }
 
         img {
+            border-radius: $mainBorderRadius;
             height: 14.8rem;
             margin-bottom: $mainGutter / 2;
             object-fit: cover;
