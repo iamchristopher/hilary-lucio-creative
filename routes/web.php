@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/blog', function () {
-    return view('blog');
+Route::group([ 'prefix' => 'blog' ], function () {
+    Route::get('/', function () {
+        return view('blog');
+    });
+
+    Route::get('/{any?}', function () {
+        return view('post');
+    });
 });
