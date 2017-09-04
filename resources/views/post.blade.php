@@ -22,4 +22,10 @@
             <p>So, what is my whole point here? It's not that I'm humble or honest (because, well, that wouldn't be very humble). It's that continued learning is essential, no matter what point you are at in your career.A very smart man once told me, "There are three distinct points in any career. When you first start out and you're shit and you know you're shit. Then you learn some stuff, and you're still kind of shit, but you think you're amazing and you stop trying to learn and better yourself. A lot of people get stuck there because they don't think they need to keep learning. And then there is the third step. Where you can actually produce work of quality but you continue to read and learn and soak up knowledge so you can continue getting better." I think that it is such a great point about the third step. Being genuinely awesome means knowing that you need to keep working to keep that momentum. If you stop caring and stop learning and stop striving to find what makes you happy in your career, thenyou will slowly begin to slip back to step two. Be a better learner. Admit you know nothing.</p>
         </article>
     </div>
+    <div class="container">
+        @component('components/blogList', [
+            'posts' => array_fill(0, 3, true),
+            'inline' => true
+        ])@endcomponent
+    </div>
 @endsection
