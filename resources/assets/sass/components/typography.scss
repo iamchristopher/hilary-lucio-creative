@@ -30,6 +30,16 @@ h1, h2, h3, h4, h5, h6 {
             z-index: -1;
         }
 
+        &.alternate {
+            &:after {
+                color: $tertiaryColour;
+                display: block;
+                font-size: 2.6rem;
+                margin-top: 1.6rem;
+                position: relative;
+            }
+        }
+
         &.secondary {
             color: $mainBackground;
 
@@ -50,7 +60,8 @@ h1 {
     font-size: 2rem;
 }
 
-h2 {
+h2,
+h3 {
     color: $primaryColour;
     display: inline-block;
     font-family: shelby;
@@ -61,7 +72,7 @@ h2 {
 
 h3 {
     color: $primaryColour;
-    font-size: 1.6rem;
+    //font-size: 1.6rem;
 }
 
 h4 {

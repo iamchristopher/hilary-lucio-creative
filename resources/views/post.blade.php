@@ -21,8 +21,15 @@
             <p>Now, I know what you're thinking. What is this girl doing going on LinkedIn and talking about how she doesn't know anything?! Isn't that, like, career suicide? Well, no, it isn't. And here's why: I'm just being honest. And, honestly, honesty is something that is hard to come by anymore. I could walk into a room and say, "Hey, I know everything there is to know about everything and you should accept that," and then proceed to be laughed out of the room by senior team members with 10+ years experience. Or, alternatively, I could walk into a room and say, "Hey, I know some stuff and I have some room to grow in other places. I am super stoked to learn though and I can't wait to learn from all of you, who, frankly, know way more than me as a whole." Now, doesn't that sound better and more reasonable?</p>
             <p>So, what is my whole point here? It's not that I'm humble or honest (because, well, that wouldn't be very humble). It's that continued learning is essential, no matter what point you are at in your career.A very smart man once told me, "There are three distinct points in any career. When you first start out and you're shit and you know you're shit. Then you learn some stuff, and you're still kind of shit, but you think you're amazing and you stop trying to learn and better yourself. A lot of people get stuck there because they don't think they need to keep learning. And then there is the third step. Where you can actually produce work of quality but you continue to read and learn and soak up knowledge so you can continue getting better." I think that it is such a great point about the third step. Being genuinely awesome means knowing that you need to keep working to keep that momentum. If you stop caring and stop learning and stop striving to find what makes you happy in your career, thenyou will slowly begin to slip back to step two. Be a better learner. Admit you know nothing.</p>
         </article>
+        <hr />
     </div>
-    <div class="container">
+    <div class="container centred">
+        <h3
+            class="alternate"
+            data-subtitle="Follow it up with one of these"
+        >
+            Like that post?
+        </h3>
         @component('components/blogList', [
             'posts' => array_fill(0, 3, true),
             'inline' => true

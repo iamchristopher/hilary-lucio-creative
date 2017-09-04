@@ -126,6 +126,12 @@ hr {
     width: 60%;
 }
 
+.centred {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 @import './components/typography';
 @import './components/form';
 @import './components/mainHeader';
