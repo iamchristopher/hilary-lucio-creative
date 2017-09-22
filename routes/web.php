@@ -24,3 +24,9 @@ Route::group([ 'prefix' => 'blog' ], function () {
         return view('post');
     });
 });
+
+Route::group([ 'prefix' => 'portfolio' ], function () {
+    Route::get("/", function () {
+        return view('portfolio');
+    });
+});
