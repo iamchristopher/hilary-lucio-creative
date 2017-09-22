@@ -6,7 +6,7 @@
                 <h1><span>York Developments</span></h1>
                 <time datetime="">Branding &amp; Identity</time>
                 <p>Mauris consectetur risus et justo sagittis auctor. Aliquam sagittis mi in ipsum pretium, nec sodales massa sodales.</p>
-                <a class="btn primary" href="">View project</a>
+                <a class="btn primary" href="/portfolio/york-developments">View project</a>
             </article>
         </li>
     @endforeach
