@@ -5,7 +5,7 @@
     <nav class="mainNavigation">
         <ul>
             <li><a href="/portfolio" title="See my work">Portfolio</a></li>
-            <li><a href="#" title="View my resume">CV</a></li>
+            <li><a href="/resume" title="View my resume">CV</a></li>
             <li><a href="#" title="Behold my wares">Services</a></li>
             <li><a href="/blog" title="Read aricles">Articles</a></li>
             <li><a href="#contact" title="Contact">Contact</a></li>

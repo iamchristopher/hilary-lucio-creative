@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('content')
-<div class="masthead primary">
+<div class="masthead primary large">
     <div class="container">
         <h1>
             <span>Holistic creative solutions</span>
