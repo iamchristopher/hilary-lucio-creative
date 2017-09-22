@@ -1,0 +1,58 @@
+.blogPost {
+    padding: 0 $mainGutter * 4;
+    position: relative;
+
+    &:before {
+        background: $primaryColour;
+        bottom: 0;
+        content: ' ';
+        display: block;
+        left: $mainGutter * 2;
+        position: absolute;
+        top: $mainGutter * 2;
+        width: 2px;
+    }
+
+    header {
+        align-items: center;
+        display: flex;
+        margin: 0 (-$mainGutter * 4) $mainGutter;
+
+        h1 {
+            color: $mainBackground;
+            font-size: 2rem;
+            letter-spacing: 0.25rem;
+            line-height: 2.75rem;
+            margin-left: -$mainGutter * 3;
+            margin-top: 7px;
+            text-transform: uppercase;
+
+            span {
+                box-shadow: 1.25rem 0 0 $secondaryColour,
+                -1.25rem 0 0 $secondaryColour;
+                background-color: $secondaryColour;
+                padding: .6rem 0 .5rem;
+            }
+        }
+
+        img {
+            border-radius: $mainBorderRadius;
+            flex: 1;
+            margin-right: $mainGutter;
+            max-width: 60%;
+        }
+
+        p {
+            font-size: 1.6rem;
+            line-height: 2rem;
+        }
+
+        time {
+            color: $primaryColour;
+            display: inline-block;
+            font-weight: 600;
+            letter-spacing: .15rem;
+            margin-bottom: 1.6rem;
+        }
+    }
+}

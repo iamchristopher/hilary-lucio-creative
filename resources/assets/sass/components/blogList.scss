@@ -1,0 +1,96 @@
+.blogList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    margin: 0;
+
+    &:not(.inline) {
+        li {
+            &:nth-of-type(3n + 1) {
+                padding-right: 0;
+            }
+
+            &:first-child {
+                align-items: center;
+                box-sizing: border-box;
+                display: flex;
+                flex: none;
+                flex-direction: row;
+                max-width: 100%;
+                text-align: left;
+
+                img {
+                    flex: 1;
+                    margin-bottom: 0;
+                    margin-right: $mainGutter;
+                    height: auto;
+                }
+
+                article {
+                    flex: 1;
+
+                    h1 {
+                        color: $mainBackground;
+                        font-size: 2rem;
+                        letter-spacing: 0.25rem;
+                        line-height: 2.75rem;
+                        margin-left: -$mainGutter * 3;
+                        margin-top: 7px;
+                        text-transform: uppercase;
+
+                        span {
+                            box-shadow: 1.25rem 0 0 $secondaryColour,
+                            -1.25rem 0 0 $secondaryColour;
+                            background-color: $secondaryColour;
+                            padding: .6rem 0 .5rem;
+                        }
+                    }
+                }
+
+                time {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    &:is(.inline) {
+    }
+
+    li {
+        flex: 0 0 33%;
+        margin: 0 0 $mainGutter 0;
+        max-width: 393px;
+        padding: 0 $mainGutter 0 0;
+        text-align: center;
+        width: 100%;
+
+        &:nth-of-type(3n) {
+            padding-right: 0;
+        }
+
+        h1 {
+            color: $secondaryColour;
+            font-size: 1.4rem;
+        }
+
+        img {
+            border-radius: $mainBorderRadius;
+            height: 14.8rem;
+            margin-bottom: $mainGutter / 2;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        time {
+            color: $primaryColour;
+            display: none;
+            font-weight: 600;
+            letter-spacing: .15rem;
+            margin-bottom: 1.6rem;
+        }
+    }
+}
