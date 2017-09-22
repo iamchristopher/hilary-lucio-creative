@@ -26,7 +26,11 @@ Route::group([ 'prefix' => 'blog' ], function () {
 });
 
 Route::group([ 'prefix' => 'portfolio' ], function () {
-    Route::get("/", function () {
+    Route::get('/', function () {
         return view('portfolio');
+    });
+
+    Route::get('/{any?}', function () {
+        return view('project');
     });
 });
