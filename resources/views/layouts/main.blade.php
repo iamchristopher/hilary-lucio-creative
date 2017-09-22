@@ -27,7 +27,7 @@
     @component('.components/header')@endcomponent
     @yield('content')
     <div class="container">
-        <section>
+        <section id="contact">
             @component('forms/contact')@endcomponent
         </section>
     </div>
