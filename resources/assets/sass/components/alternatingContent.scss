@@ -1,0 +1,41 @@
+.alternatingContent {
+    section {
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 (-$mainGutter * 4) $mainGutter;
+        text-align: right;
+
+        &:nth-of-type(2n) {
+            flex-direction: row;
+            text-align: left;
+
+            h2 {
+                &:before {
+                    background-position: left center;
+                }
+            }
+
+            img {
+                margin: 0 10% 0 0;
+            }
+        }
+
+        h2 {
+            padding: 0;
+
+            &:before {
+                @extend hr;
+                background-position: right center;
+                content: ' ';
+                display: block;
+                height: 3.2rem;
+            }
+        }
+
+        img {
+            margin: 0 0 0 10%;
+            max-width: 50%;
+        }
+    }
+}
