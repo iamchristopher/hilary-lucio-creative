@@ -53,6 +53,21 @@
         }
     }
 
+    &.secondary {
+        background-color: $secondaryColour;
+        background-blend-mode: screen;
+        background-image: url('/images/bg_tex_stripes.png');
+
+        h1 {
+            @extend h2;
+        }
+
+        .container {
+            border: 0;
+            padding: 0;
+        }
+    }
+
     &.tertiary {
         background-color: #ebebeb;
         background-image: url("/images/bg_tex_arrows.png");
