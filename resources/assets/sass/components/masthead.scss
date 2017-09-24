@@ -14,6 +14,9 @@
             padding: $mainGutter * 2;
 
             h1 {
+                color: $mainBackground;
+                font-family: 'Proxima Nova', sans-serif;
+                font-size: 2.65rem;
                 letter-spacing: 0.25rem;
                 line-height: 2.75rem;
                 margin-top: 7px;
@@ -29,12 +32,12 @@
         }
     }
 
-    h1 {
-        @extend h2;
-    }
-
     .container {
         margin-bottom: 0;
+
+        h1 {
+            @extend h2;
+        }
     }
 
     .services {
@@ -61,6 +64,13 @@
     }
 
     &.primary {
+        h1 {
+            color: $mainBackground;
+
+            &[data-subtitle]:after {
+                opacity: .45;
+            }
+        }
     }
 
     &.secondary {
