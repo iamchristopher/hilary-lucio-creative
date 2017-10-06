@@ -33,9 +33,17 @@ Route::group([ 'prefix' => 'blog' ], function () {
             ->slug($slug)
             ->with('attachment')
             ->first();
+        $relatedPosts = Post::type('post')
+            ->where('posts.id', '!=', $post->ID)
+            ->published()
+            ->with('attachment')
+            ->inRandomOrder()
+            ->take(3)
+            ->get();
 
         return view('post', [
-            'post' => $post
+            'post' => $post,
+            'relatedPosts' => $relatedPosts
         ]);
     });
 });
