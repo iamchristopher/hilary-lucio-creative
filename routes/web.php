@@ -11,17 +11,32 @@
 |
 */
 
+use Corcel\Model\Post;
+
 Route::get('/', function () {
     return view('index');
 });
 
 Route::group([ 'prefix' => 'blog' ], function () {
     Route::get('/', function () {
-        return view('blog');
+        $posts = Post::type('post')
+            ->published()
+            ->get();
+
+        return view('blog', [
+            'posts' => $posts
+        ]);
     });
 
-    Route::get('/{any?}', function () {
-        return view('post');
+    Route::get('/{any?}', function ($slug) {
+        $post = Post::type('post')
+            ->slug($slug)
+            ->with('attachment')
+            ->first();
+
+        return view('post', [
+            'post' => $post
+        ]);
     });
 });
 

@@ -7,7 +7,7 @@
 </div>
 <div class="container">
     @component('components/blogList', [
-        'posts' => array_fill(0, 3, true)
+        'posts' => $posts
     ])@endcomponent
     @component('components/pagination', [
         'numPages' => 5
