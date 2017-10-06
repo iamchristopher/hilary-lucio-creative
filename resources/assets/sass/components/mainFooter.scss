@@ -15,6 +15,7 @@
     .container {
         box-sizing: border-box;
         padding: $mainGutter / 2;
+        margin-bottom: 0;
 
         > div {
             flex: 1 0 auto;

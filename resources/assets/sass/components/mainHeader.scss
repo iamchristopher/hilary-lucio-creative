@@ -2,4 +2,10 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    margin-bottom: $mainGutter / 2;
+
+    .mainLogo {
+        display: inherit;
+        height: $mainGutter;
+    }
 }
