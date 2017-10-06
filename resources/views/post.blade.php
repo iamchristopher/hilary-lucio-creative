@@ -28,7 +28,7 @@
             Like that post?
         </h3>
         @component('components/blogList', [
-            'posts' => array_fill(0, 3, true),
+            'posts' => $relatedPosts,
             'inline' => true
         ])@endcomponent
     </div>
