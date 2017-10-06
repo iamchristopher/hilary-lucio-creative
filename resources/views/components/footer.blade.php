@@ -4,10 +4,10 @@
             <h6>Explore</h6>
             <nav>
                 <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Case Studies</a></li>
-                    <li><a href="#">Articles</a></li>
-                    <li><a href="#">Request a Quote</a></li>
+                    <li><a href="/resume">About Me</a></li>
+                    <li><a href="/portfolio">Case Studies</a></li>
+                    <li><a href="/blog">Articles</a></li>
+                    <li><a href="#contact">Request a Quote</a></li>
                 </ul>
             </nav>
         </div>

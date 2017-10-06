@@ -24,7 +24,7 @@
         <section class="aboutSection">
             <h2 data-subtitle="Who are you?">About me</h2>
             <p>four loko pop-up farm-to-table Cosby sweater lomo squid quinoa deep v beard pour-over cray mixtape dreamcatcher Helvetica art party craft beer bespoke street art umami +1 skateboard typewriter asymmetrical cardigan Carles next level Truffaut try-hard ethical PBR flexitarian cliche Pinterest locavore meh scenester heirloom crucifix fanny pack you probably haven't heard of them</p>
-            <a class="btn primary" href="#">Wanna see my CV?</a>
+            <a class="btn primary" href="/resume">Wanna see my CV?</a>
             <hr />
         </section>
         <section>
@@ -66,13 +66,13 @@
             <div class="primary">
                 <div>
                     <h2 class="secondary" data-subtitle="Selected projects">Portfolio</h2><br>
-                    <a class="btn secondary" href="#">See all projects</a>
+                    <a class="btn secondary" href="/portfolio">See all projects</a>
                 </div>
                 <img src="/images/sketchbook.png" />
             </div>
             <div>
                 <h2 class="tertiary" data-subtitle="Thoughts &amp; musings">Articles</h2><br>
-                <a class="btn tertiary" href="#">See all posts</a>
+                <a class="btn tertiary" href="/blog">See all posts</a>
             </div>
         </section>
     </div>
