@@ -14,9 +14,6 @@
                     <h1><span>{{ $project->post_title }}</span></h1>
                     <time datetime="">{{ $project->getMainCategoryAttribute() }}</time>
                     <p>{{ $project->content }}</p>
-                    @component('components/pagination', [
-                        'numPages' => 3
-                    ])@endcomponent
                 </div>
             </header>
             <div class="alternatingContent">
