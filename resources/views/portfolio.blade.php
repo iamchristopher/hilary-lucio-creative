@@ -7,18 +7,8 @@
 </div>
 <div class="container">
     @component('components/projectList', [
-        'posts' => array_fill(0, 3, true)
+        'projects' => $projects
     ])@endcomponent
-    <nav class="pagination">
-        <a href="#" rel="first">&laquo;</a>
-        <a href="#" rel="prev">&lsaquo;</a>
-        <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-        </ul>
-        <a href="#" rel="next">&rsaquo;</a>
-        <a href="#" rel="last">&raquo;</a>
-    </nav>
+    {{ $projects->links() }}
 </div>
 @endsection

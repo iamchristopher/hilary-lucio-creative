@@ -1,45 +1,33 @@
 .pagination {
+    list-style: none;
+    padding: 0;
     text-align: center;
 
-    > a {
-        color: #aeaeae;
-        font-size: 2rem;
-        font-weight: normal;
-        padding: .5rem .5rem;
-        transition: $mainTransitionDuration;
-        vertical-align: text-bottom;
-
-        &:active,
-        &:focus,
-        &:hover {
-            color: $primaryColour;
-            text-decoration: none;
-        }
-    }
-
-    ul {
+    li {
         display: inline-block;
-        font-size: 1rem;
-        list-style: none;
-        padding: 0;
 
-        li {
-            display: inline-block;
+        a {
+            border: .2rem solid #ebebeb;
+            border-radius: .5rem;
+            color: #aeaeae;
+            padding: .5rem .85rem;
+            transition: $mainTransitionDuration;
 
-            a {
-                border: .2rem solid #ebebeb;
-                border-radius: .5rem;
-                color: #aeaeae;
-                padding: .5rem .85rem;
-                transition: $mainTransitionDuration;
+            &:active,
+            &:focus,
+            &:hover,
+            &.active {
+                border-color: $primaryColour;
+                color: $primaryColour;
+                text-decoration: none;
+            }
 
-                &:active,
-                &:focus,
-                &:hover {
-                    border-color: $primaryColour;
-                    color: $primaryColour;
-                    text-decoration: none;
-                }
+            &[rel="next"],
+            &[rel="prev"] {
+                border: none;
+                font-size: 2rem;
+                padding: .25rem .5rem;
+                vertical-align: text-bottom;
             }
         }
     }
