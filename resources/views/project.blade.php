@@ -6,13 +6,13 @@
         </div>
     </div>
     <div class="container">
-        <a href="/portfolio">&lsaquo; Back to all case studies</a>
+        <a class="uppercase" href="/portfolio">&lsaquo; Back to all case studies</a>
         <main class="project">
             <header>
                 <img src="{{ $project->getImageAttribute() ?? '/images/temp_blog_image.jpg' }}" />
                 <div>
                     <h1><span>{{ $project->post_title }}</span></h1>
-                    <time datetime="">{{ $project->getMainCategoryAttribute() }}</time>
+                    <span class="uppercase">{{ $project->getMainCategoryAttribute() }}</span>
                     <p>{{ $project->content }}</p>
                 </div>
             </header>

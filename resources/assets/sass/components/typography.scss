@@ -90,3 +90,11 @@ h6 {
 p {
     margin: 0 0 1.6rem;
 }
+
+.uppercase {
+    color: $primaryColour;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+}

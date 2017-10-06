@@ -6,13 +6,16 @@
         </div>
     </div>
     <div class="container">
-        <a href="/blog">&lsaquo; Back to all blog posts</a>
+        <a class="uppercase" href="/blog">&lsaquo; Back to all blog posts</a>
         <article class="blogPost">
             <header>
                 <img src="{{ $post->getImageAttribute() }}" />
                 <div>
                     <h1><span>{{ $post->post_title }}</span></h1>
-                    <time datetime="{{ $post->post_date }}">{{ Carbon\Carbon::parse($post->post_date)->format('m/d/Y') }}</time>
+                    <time
+                        class="uppercase"
+                        datetime="{{ $post->post_date }}"
+                    >{{ Carbon\Carbon::parse($post->post_date)->format('m/d/Y') }}</time>
                     <p>{{ $post->post_excerpt }}</p>
                 </div>
             </header>
