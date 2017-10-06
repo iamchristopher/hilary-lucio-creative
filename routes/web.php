@@ -21,7 +21,7 @@ Route::group([ 'prefix' => 'blog' ], function () {
     Route::get('/', function () {
         $posts = Post::type('post')
             ->published()
-            ->get();
+            ->paginate(7);
 
         return view('blog', [
             'posts' => $posts
@@ -44,7 +44,7 @@ Route::group([ 'prefix' => 'portfolio' ], function () {
     Route::get('/', function () {
         $projects = Post::type('jetpack-portfolio')
             ->published()
-            ->get();
+            ->paginate(7);
 
         return view('portfolio', [
             'projects' => $projects

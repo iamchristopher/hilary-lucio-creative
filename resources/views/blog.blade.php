@@ -9,8 +9,6 @@
     @component('components/blogList', [
         'posts' => $posts
     ])@endcomponent
-    @component('components/pagination', [
-        'numPages' => 5
-    ])@endcomponent
+    {{ $posts->links() }}
 </div>
 @endsection
