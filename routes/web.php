@@ -64,9 +64,17 @@ Route::group([ 'prefix' => 'portfolio' ], function () {
             ->slug($slug)
             ->with('attachment')
             ->first();
+        $relatedProjects = Post::type('jetpack-portfolio')
+            ->where('posts.id', '!=', $project->ID)
+            ->published()
+            ->with('attachment')
+            ->inRandomOrder()
+            ->take(3)
+            ->get();
 
         return view('project', [
-            'project' => $project
+            'project' => $project,
+            'relatedProjects' => $relatedProjects
         ]);
     });
 });

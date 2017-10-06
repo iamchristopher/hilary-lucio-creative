@@ -41,7 +41,7 @@
             Want more cool shit?
         </h3>
         @component('components/projectList', [
-            'posts' => array_fill(0, 3, true),
+            'projects' => $relatedProjects,
             'inline' => true
         ])@endcomponent
     </div>
