@@ -9,38 +9,26 @@
         <a href="/portfolio">&lsaquo; Back to all case studies</a>
         <main class="project">
             <header>
-                <img src="/images/temp_blog_image.jpg" />
+                <img src="{{ $project->getImageAttribute() ?? '/images/temp_blog_image.jpg' }}" />
                 <div>
-                    <h1><span>York Developments</span></h1>
-                    <time datetime="">Brand &amp; Identity</time>
-                    <p>Once upon a time, there was a naïve young woman who thought that everything in the design world was approached in the same way. This young woman never thought of which area of design she wanted to focus on simply because she didn't know (excuse my French) shit from beans.</p>
+                    <h1><span>{{ $project->post_title }}</span></h1>
+                    <time datetime="">{{ $project->getMainCategoryAttribute() }}</time>
+                    <p>{{ $project->content }}</p>
                     @component('components/pagination', [
                         'numPages' => 3
                     ])@endcomponent
                 </div>
             </header>
             <div class="alternatingContent">
-                <section>
-                    <img src="/images/temp_blog_image.jpg" />
-                    <div>
-                        <h2>Something</h2>
-                        <p>Once upon a time, there was a naïve young woman who thought that everything in the design world was approached in the same way. This young woman never thought of which area of design she wanted to focus on simply because she didn't know (excuse my French) shit from beans.</p>
-                    </div>
-                </section>
-                <section>
-                    <img src="/images/temp_blog_image.jpg" />
-                    <div>
-                        <h2>Something</h2>
-                        <p>Once upon a time, there was a naïve young woman who thought that everything in the design world was approached in the same way. This young woman never thought of which area of design she wanted to focus on simply because she didn't know (excuse my French) shit from beans.</p>
-                    </div>
-                </section>
-                <section>
-                    <img src="/images/temp_blog_image.jpg" />
-                    <div>
-                        <h2>Something</h2>
-                        <p>Once upon a time, there was a naïve young woman who thought that everything in the design world was approached in the same way. This young woman never thought of which area of design she wanted to focus on simply because she didn't know (excuse my French) shit from beans.</p>
-                    </div>
-                </section>
+                @foreach($project->attachment as $attachment)
+                    <section>
+                        <img src="{{ $attachment->guid }}" />
+                        <div>
+                            <h2>{{ $attachment->title }}</h2>
+                            <p>{{ $attachment->post_content }}</p>
+                        </div>
+                    </section>
+                @endforeach
             </div>
         </main>
         <hr />

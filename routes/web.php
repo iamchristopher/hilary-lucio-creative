@@ -42,10 +42,23 @@ Route::group([ 'prefix' => 'blog' ], function () {
 
 Route::group([ 'prefix' => 'portfolio' ], function () {
     Route::get('/', function () {
-        return view('portfolio');
+        $projects = Post::type('jetpack-portfolio')
+            ->published()
+            ->get();
+
+        return view('portfolio', [
+            'projects' => $projects
+        ]);
     });
 
-    Route::get('/{any?}', function () {
-        return view('project');
+    Route::get('/{any?}', function ($slug) {
+        $project = Post::type('jetpack-portfolio')
+            ->slug($slug)
+            ->with('attachment')
+            ->first();
+
+        return view('project', [
+            'project' => $project
+        ]);
     });
 });

@@ -7,7 +7,7 @@
 </div>
 <div class="container">
     @component('components/projectList', [
-        'posts' => array_fill(0, 3, true)
+        'projects' => $projects
     ])@endcomponent
     <nav class="pagination">
         <a href="#" rel="first">&laquo;</a>
